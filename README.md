@@ -124,7 +124,7 @@ argocd CLI >= 2.10
 ### 1. Clone & Configure
 
 ```bash
-git clone https://github.com/betelabs/enterprise-k8s-platform-.git
+git clone https://github.com/betelabs/enterprise-k8s-platform.git
 cd enterprise-k8s-platform
 
 # Copy and fill in your cloud credentials

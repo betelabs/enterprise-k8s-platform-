@@ -17,7 +17,7 @@ spec:
     spec:
       project: platform
       source:
-        repoURL: https://github.com/betelabs/enterprise-k8s-platform-
+        repoURL: https://github.com/betelabs/enterprise-k8s-platform
         targetRevision: HEAD
         path: "helm/{{component}}"
       destination:
