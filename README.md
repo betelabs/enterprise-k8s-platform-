@@ -347,8 +347,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome for:
   <a href="mailto:hello@betelabs.com">
     <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-
-  <img src="https://img.shields.io/badge/CKA-Certified-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
 </p>
 
 ### Ashwani Kumar
