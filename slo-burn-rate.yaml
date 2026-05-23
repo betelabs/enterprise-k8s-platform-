@@ -9,7 +9,7 @@ groups:
           severity: page
         annotations:
           summary: "Error budget burning fast — {{ $labels.job }}"
-          runbook: "https://github.com/ashwani547/enterprise-k8s-platform/blob/main/observability/runbooks/slo-breach.md"
+          runbook: "https://github.com/betelabs/enterprise-k8s-platform-/blob/main/observability/runbooks/slo-breach.md"
       - alert: AvailabilitySLOBreach
         expr: avg_over_time(up[5m]) < 0.999
         for: 2m
