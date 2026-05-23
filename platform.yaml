@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: platform-components
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - { component: istio,          namespace: istio-system }
+          - { component: opa-gatekeeper, namespace: gatekeeper-system }
+          - { component: vault,          namespace: vault }
+          - { component: observability,  namespace: monitoring }
+  template:
+    metadata:
+      name: "platform-{{component}}"
+    spec:
+      project: platform
+      source:
+        repoURL: https://github.com/ashwani547/enterprise-k8s-platform
+        targetRevision: HEAD
+        path: "helm/{{component}}"
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: "{{namespace}}"
+      syncPolicy:
+        automated: { prune: true, selfHeal: true }
+        syncOptions: [CreateNamespace=true, ServerSideApply=true]

@@ -1,0 +1,19 @@
+groups:
+  - name: slo_burn_rate
+    rules:
+      - alert: HighErrorBudgetBurn
+        expr: |
+          (job:http_requests_total:rate5m{status="error"} / job:http_requests_total:rate5m) > 0.01
+        for: 5m
+        labels:
+          severity: page
+        annotations:
+          summary: "Error budget burning fast — {{ $labels.job }}"
+          runbook: "https://github.com/ashwani547/enterprise-k8s-platform/blob/main/observability/runbooks/slo-breach.md"
+      - alert: AvailabilitySLOBreach
+        expr: avg_over_time(up[5m]) < 0.999
+        for: 2m
+        labels:
+          severity: page
+        annotations:
+          summary: "Availability below 99.9% SLO"
