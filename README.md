@@ -333,15 +333,32 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome for:
 - Documentation fixes
 
 ---
-
 ## 👤 Author
 
-**Ashwani Kumar** · Head of DevOps · CKA Certified  
-📧 ashwani.kumar.career@gmail.com  
-🔗 [linkedin.com/in/ashwani547](https://linkedin.com/in/ashwani547)  
+<p align="left">
+  <a href="https://github.com/betelabs" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+
+  <a href="https://linkedin.com/in/ashwani547" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Ashwani%20Kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+
+  <a href="mailto:hello@betelabs.com">
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+
+  <img src="https://img.shields.io/badge/CKA-Certified-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+</p>
+
+### Ashwani Kumar
+Head of DevOps • Kubernetes Engineer • Cloud Native Enthusiast
 
 ---
 
 <div align="center">
-  <sub>If this saved you hours of setup, please ⭐ star the repo — it helps others find it.</sub>
+  <sub>
+    ⭐ If this project helped you, consider starring the repository to support the project.
+  </sub>
 </div>
+
